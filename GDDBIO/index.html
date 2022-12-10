@@ -1,0 +1,74 @@
+<html>
+
+<head>
+        <title>Bryan Soto</title>
+        <meta charset="utf-8">
+        <link href="portfolio.css" rel="stylesheet">
+    </head>
+   
+   <style> 
+   
+    .main-nav ul {
+        display: grid;
+        margin-top: 1px;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+                }
+    .subheaders {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20pt;
+    border: 3px solid rgb(139, 154, 112);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(220, 220, 220, 0.082);
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    }
+
+    </style>
+
+    <body>
+      <nav class="main-nav" id="mainNav">
+
+        <ul>
+          <li class="current"><a href="bio.html">Home</a></li>
+          <li><a href="writing.html">ART</a></li>
+          <li><a href="GameDocs.html">Game Docs</a></li>
+          <li><a href="Games.html">Games</a></li>
+        </ul>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="checkWin()">☰</a>
+        </nav>
+        <h1 id="Top">Bryan Soto Passport</h1>
+        <hr>
+        <div class="subheaders">
+      
+      
+      
+            <h2 id="Bio">Bio</h2>
+      <p>Game Design major with a focus in Narrative Design. Fan of character-driven games, deep and rich worldbuilding, and well hidden mysteries.</p>
+    </div>
+
+      [<a href="#Top">Back to Top</a>]
+    <script>  
+      function checkWin() {
+        var x = document.getElementById("mainNav");
+        
+        if (x.className === "main-nav") { 
+            x.className += " responsive";
+        } else {
+            x.className = "main-nav"; /*code credit: 'https://www.w3schools.com/howto/howto_js_mobile_navbar.asp' */
+        }
+      }
+    </script>
+      
+
+</body>
+
+</html>
